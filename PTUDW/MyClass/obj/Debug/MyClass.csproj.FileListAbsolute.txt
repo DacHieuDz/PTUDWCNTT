@@ -1,0 +1,12 @@
+D:\Baitap\PTUDWCNTT\PTUDW\MyClass\bin\Debug\MyClass.dll.config
+D:\Baitap\PTUDWCNTT\PTUDW\MyClass\bin\Debug\MyClass.dll
+D:\Baitap\PTUDWCNTT\PTUDW\MyClass\bin\Debug\MyClass.pdb
+D:\Baitap\PTUDWCNTT\PTUDW\MyClass\bin\Debug\EntityFramework.dll
+D:\Baitap\PTUDWCNTT\PTUDW\MyClass\bin\Debug\EntityFramework.SqlServer.dll
+D:\Baitap\PTUDWCNTT\PTUDW\MyClass\bin\Debug\EntityFramework.xml
+D:\Baitap\PTUDWCNTT\PTUDW\MyClass\bin\Debug\EntityFramework.SqlServer.xml
+D:\Baitap\PTUDWCNTT\PTUDW\MyClass\obj\Debug\MyClass.csproj.AssemblyReference.cache
+D:\Baitap\PTUDWCNTT\PTUDW\MyClass\obj\Debug\MyClass.csproj.CoreCompileInputs.cache
+D:\Baitap\PTUDWCNTT\PTUDW\MyClass\obj\Debug\MyClass.csproj.CopyComplete
+D:\Baitap\PTUDWCNTT\PTUDW\MyClass\obj\Debug\MyClass.dll
+D:\Baitap\PTUDWCNTT\PTUDW\MyClass\obj\Debug\MyClass.pdb
