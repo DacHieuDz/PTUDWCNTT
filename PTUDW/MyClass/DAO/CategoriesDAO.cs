@@ -25,12 +25,12 @@ namespace MyClass.DAO
             List<Categories> list = null;
             switch(status)
             {
-                case "Index":
+                case "Index": // 1,2
                     {
                         list = db.Categories.Where(m => m.Status != 0).ToList();
                         break;
                     }
-                case "Trash":
+                case "Trash": // 0
                     {
                         list = db.Categories.Where(m => m.Status == 0).ToList();
                         break;
