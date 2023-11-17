@@ -202,11 +202,22 @@ namespace PTUDW.Areas.Admin.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Suppliers suppliers = suppliersDAO.getRow(id);
-            // xoa mau tin ra khoi Database
-            suppliersDAO.Delete(suppliers);
+            //xu ly cho phan upload hinh anh
+            var img = Request.Files["img"];//lay thong tin file
+            string PathDir = "~/Public/img/supplier";
+            //xoa mau tin ra khoi DB
+            if (suppliersDAO.Delete(suppliers) == 1)
+            {
+                //Xu ly cho muc xoa hinh anh
+                if (suppliers.Img != null)
+                {
+                    string DelPath = Path.Combine(Server.MapPath(PathDir), suppliers.Img);
+                    System.IO.File.Delete(DelPath);
+                }
+            }
             // thong bao xoa mau tin thanh cong
             TempData["message"] = new XMessage("success", "Xóa nhà cung cấp thành công");
-            return RedirectToAction("Index");
+            return RedirectToAction("Trash");
         }
 
         // phat sinh them 1 so action: Status, Trash, Deltrash, Undo. Copy tu category controller
@@ -252,7 +263,7 @@ namespace PTUDW.Areas.Admin.Controllers
             if (id == null)
             {
                 // thong bao that bai
-                TempData["message"] = new XMessage("danger", "Không tìm thấy mãu tin");
+                TempData["message"] = new XMessage("danger", "Không tìm thấy mẩu tin");
                 return RedirectToAction("Index");
             }
 
@@ -262,7 +273,7 @@ namespace PTUDW.Areas.Admin.Controllers
             if (suppliers == null)
             {
                 // thong bao that bai
-                TempData["message"] = new XMessage("danger", "Không tìm thấy mãu tin");
+                TempData["message"] = new XMessage("danger", "Không tìm thấy mẩu tin");
                 return RedirectToAction("Index");
             }
             else
