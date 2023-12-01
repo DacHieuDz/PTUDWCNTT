@@ -282,6 +282,7 @@
     <Content Include="Public\img\login.jpg" />
     <Content Include="Public\img\logo.png" />
     <Content Include="Public\img\product\card.jpg" />
+    <Content Include="Public\img\product\logo.png" />
     <Content Include="Public\img\product\product-sm-1.png" />
     <Content Include="Public\img\product\product-sm-2.png" />
     <Content Include="Public\img\product\product-sm-3.png" />
