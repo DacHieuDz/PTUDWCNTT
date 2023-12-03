@@ -46,5 +46,6 @@ namespace MyClass.Model
         public DateTime UpdateAt { get; set; }
 
         public int Status { get; set; }
+        public string FirstName { get; set; }
     }
 }
