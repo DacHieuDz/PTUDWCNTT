@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("../../img/AiLaTrieuPhu/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.logo img {
+  width: 25rem;
+}
+
+.btn {
+  display: block;
+  width: 25rem;
+  margin: 1rem auto;
+  padding: 0.7em 0;
+  background-color: rgb(131, 129, 129);
+  /* border: 2px solid orangered; */
+  outline: none;
+  border-radius: 999px;
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn a:active {
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: rgba(131, 129, 129, 0.5);
+}

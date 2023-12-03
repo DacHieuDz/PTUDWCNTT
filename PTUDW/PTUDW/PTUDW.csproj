@@ -127,8 +127,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AiLaTrieuPhuController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\Admin\Controllers\FishController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\SupplierController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -154,8 +156,19 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Public\audio\answer_right.ogg" />
+    <Content Include="Public\audio\answer_right_5_10.ogg" />
+    <Content Include="Public\audio\answer_wrong.ogg" />
+    <Content Include="Public\audio\end-time.ogg" />
+    <Content Include="Public\audio\start.ogg" />
+    <Content Include="Public\audio\time_to_answer.ogg" />
+    <Content Include="Public\audio\winner.ogg" />
+    <Content Include="Public\css\AiLaTrieuPhu\howtoplay.css" />
+    <Content Include="Public\css\AiLaTrieuPhu\index.css" />
     <Content Include="Public\css\jquery.dataTables.min.css" />
     <Content Include="Public\css\main.css" />
+    <Content Include="Public\css\AiLaTrieuPhu\playgame.css" />
+    <Content Include="Public\css\snake.css" />
     <Content Include="Public\css\style.css" />
     <Content Include="Public\dist\css\adminlte.css" />
     <Content Include="Public\dist\css\adminlte.min.css" />
@@ -208,6 +221,12 @@
     <Content Include="Public\dist\js\pages\dashboard.js" />
     <Content Include="Public\dist\js\pages\dashboard2.js" />
     <Content Include="Public\dist\js\pages\dashboard3.js" />
+    <Content Include="Public\img\AiLaTrieuPhu\background.jpg" />
+    <Content Include="Public\img\AiLaTrieuPhu\help_50.jpg" />
+    <Content Include="Public\img\AiLaTrieuPhu\help_50_used.jpg" />
+    <Content Include="Public\img\AiLaTrieuPhu\help_audience.jpg" />
+    <Content Include="Public\img\AiLaTrieuPhu\help_audience_used.jpg" />
+    <Content Include="Public\img\AiLaTrieuPhu\logo-clip.png" />
     <Content Include="Public\img\blog\add.jpg" />
     <Content Include="Public\img\blog\author.png" />
     <Content Include="Public\img\blog\blog1.png" />
@@ -2530,6 +2549,8 @@
     <Content Include="Public\vendors\themify-icons\SVG\zoom-in.svg" />
     <Content Include="Public\vendors\themify-icons\SVG\zoom-out.svg" />
     <Content Include="Public\vendors\themify-icons\themify-icons.css" />
+    <Content Include="Scripts\AiLaTrieuPhu\jquery-3.5.1.min.js" />
+    <Content Include="Scripts\AiLaTrieuPhu\main.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Public\img\blog\.DS_Store" />
@@ -2678,10 +2699,18 @@
     <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Supplier\Trash.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Trash.cshtml" />
+    <Content Include="Areas\Admin\Views\Fish\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AiLaTrieuPhu\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AiLaTrieuPhu\HowToPlay.cshtml" />
+    <Content Include="Areas\Admin\Views\AiLaTrieuPhu\PlayGame.cshtml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Content Include="Public\img\AiLaTrieuPhu\help_50.webp" />
+    <Content Include="Public\img\AiLaTrieuPhu\help_50_used.webp" />
+    <Content Include="Public\img\AiLaTrieuPhu\help_audience.webp" />
+    <Content Include="Public\img\AiLaTrieuPhu\help_audience_used.webp" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2693,6 +2722,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\snake.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

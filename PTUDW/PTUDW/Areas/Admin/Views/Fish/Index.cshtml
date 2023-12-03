@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Bầu cua tôm cá";
+}
+
+<link rel="stylesheet" href="~/Public/css/snake.css" />
+
+<div class="container">
+    <header>
+        <div class="contrast">100%</div>
+        <div class="score">0</div>
+    </header>
+    <div class="grid"></div>
+    <footer>
+        Nhấn mũi tên hoặc phím cách để bắt đầu
+        <div>Ấn H nếu muốn chơi chế độ khó
+    </footer>
+</div>
+
+
+<a style="position: fixed; top: 20px; left: 20px; background-color: white; color: black; text-decoration:none; padding: 12px; border-radius: 5px"href="@Url.Action("Index","Dashboard")" class="btn-sm btn-info"><i class="fa fa-long-arrow-alt-left"> Quay lại</i></a>
+
+<script src="~/Scripts/snake.js"></script>

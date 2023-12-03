@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hướng dẫn chơi game</title>
+    <link rel="stylesheet" href="~/Public/css/AiLaTrieuPhu/howtoplay.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2>HƯỚNG DẪN CHƠI GAME: "AI LÀ TRIỆU PHÚ"</h2>
+        <ul>
+            <li>
+                <span>1.</span>
+                Trò chơi bao gồm 15 câu hỏi với các mức tiền thưởng tăng dần từ câu hỏi 1 đến câu hỏi 15.
+            </li>
+            <li>
+                <span>2.</span>
+                Mỗi câu hỏi có bốn phương án trả lời A, B, C và D, trong đó chỉ có một phương án đúng.
+            </li>
+            <li>
+                <span>3.</span>
+                Người chơi phải chọn một trong bốn phương án trả lời và khóa câu trả lời bằng cách nhấn vào nút trả lời.
+            </li>
+            <li>
+                <span>4.</span>
+                Nếu người chơi trả lời đúng, anh/chị sẽ được tiến tới câu hỏi tiếp theo và nhận được mức tiền thưởng tương ứng. Nếu trả lời sai, trò chơi kết thúc và bạn sẽ nhận được tiền thưởng tương ứng với câu hỏi cuối cùng đã trả lời đúng.
+            </li>
+            <li>
+                <span>5.</span>
+                Trong quá trình chơi, bạn sẽ có ba lượt trợ giúp:
+                <br />a. "Hỏi khán giả" (Ask the Audience): Bạn có thể xem ý kiến của khán giả về câu trả lời đúng. Khán giả sẽ biểu đồ hóa các phương án trả lời và cho biết ý kiến của họ về câu trả lời đúng.
+                <br />b. "Hỏi ý kiến của khán giả trong trường quay" (Ask the Studio Audience): Bạn có thể xem ý kiến của khán giả trong trường quay. Họ sẽ đứng dậy và lựa chọn phương án trả lời mà họ cho là đúng.
+                <br />c. "Hỏi một người bạn" (Phone a Friend): Bạn có thể gọi điện cho một người bạn để nhờ ý kiến trợ giúp. Họ có thể cung cấp cho bạn một gợi ý hoặc thông tin hữu ích.
+                Để sử dụng trợ giúp, bạn cần chọn một trong ba lượt trợ giúp hiển thị trên giao diện và nhấn vào nút tương ứng khi bạn cần.
+            </li>
+            <li>
+                <span>6.</span>
+                Trò chơi kết thúc khi bạn trả lời sai hoặc quyết định dừng lại và rút lui với mức tiền thưởng đã có.
+            </li>
+        </ul>
+
+        <a href="@Url.Action("Index","AiLaTrieuPhu")" class="btn">OK. QUAY LẠI</a>
+    </div>
+</body>
+
+</html>
